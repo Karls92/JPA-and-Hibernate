@@ -8,6 +8,15 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Welcome to JPA with Hibernate!" );
+        
+        CustomerController cc = new CustomerController();
+        
+        //testing add
+        //cc.addCustomer(3, "Testing", "Deleting", 35);
+        //cc.allCustomers();
+        //cc.getCustomer(1);
+        //cc.editCustomer("Martin", "Luthor", 20, 1);
+        //cc.allCustomers();
+        //cc.deleteCustomer(2);
     }
 }
