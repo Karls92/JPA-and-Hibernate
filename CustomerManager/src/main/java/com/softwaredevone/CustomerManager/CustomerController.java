@@ -59,7 +59,7 @@ public class CustomerController {
 			em.close();
 		}
 	}
-	public void addCustomer(int id, String firstName, String lastName, int age) {
+	public void addCustomer(String firstName, String lastName, int age) {
 		
 		EntityManager em = this.EMF.createEntityManager();
 		EntityTransaction et = null;
@@ -70,7 +70,6 @@ public class CustomerController {
 			et.begin();
 			
 			Customer cust = new Customer();
-			cust.setId(id);
 			cust.setFirstName(firstName);
 			cust.setLastName(lastName);
 			cust.setAge(age);

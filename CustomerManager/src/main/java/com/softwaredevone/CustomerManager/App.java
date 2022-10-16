@@ -11,12 +11,21 @@ public class App
         
         CustomerController cc = new CustomerController();
         
-        //testing add
-        //cc.addCustomer(3, "Testing", "Deleting", 35);
-        //cc.allCustomers();
-        //cc.getCustomer(1);
-        //cc.editCustomer("Martin", "Luthor", 20, 1);
-        //cc.allCustomers();
-        //cc.deleteCustomer(2);
+        //test application
+        cc.addCustomer("Arnold", "Smith", 35);
+        cc.addCustomer("Jhonny", "Linderman", 22);
+        cc.addCustomer("Richard", "Stwart", 16);
+        cc.addCustomer("Fernando", "Mendez", 48);
+        cc.addCustomer("Georgina", "Spencer", 39);
+        
+        cc.allCustomers();
+        
+        cc.getCustomer(4);
+        cc.editCustomer("Martin", "Luthor", 20, 4);
+        
+        cc.allCustomers();
+        
+        cc.deleteCustomer(2);
+        cc.allCustomers();
     }
 }
