@@ -11,7 +11,7 @@ public class App
         
         CustomerController cc = new CustomerController();
         
-        //test application
+        //test Customer class
         cc.addCustomer("Arnold", "Smith", 35);
         cc.addCustomer("Jhonny", "Linderman", 22);
         cc.addCustomer("Richard", "Stwart", 16);
